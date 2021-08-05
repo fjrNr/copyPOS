@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView android:layout_gravity="center"
+            android:id="@+id/logo"
+            android:background="@mipmap/ic_laucher"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView android:textSize="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Selamat datang di Copy POS, silakan login untuk menggunakannya." android:textAlignment="center"/>
+        <TextView android:textSize="16dp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="Email atau Username*" android:textAlignment="textStart"/>
+        <EditText android:id="@+id/txt_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:hint="Ex: example@mail.com or ex_name" android:singleLine="true" android:inputType="textEmailAddress"/>
+        <TextView android:textSize="16dp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="Password*" android:textAlignment="textStart"/>
+        <EditText android:id="@+id/txt_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:singleLine="true" android:inputType="textPassword"/>
+        <Button android:textStyle="bold" android:textColor="#fff" android:layout_gravity="center" android:id="@+id/btn_login" android:background="@android:color/holo_green_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Login"/>
+        <Button android:textStyle="bold" android:layout_gravity="center" android:id="@+id/btn_register" android:background="@android:color/holo_blue_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Register"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

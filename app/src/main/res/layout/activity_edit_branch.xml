@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/logo"
+                android:background="@drawable/ic_btn_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/todo" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_image"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_btn_image"
+                android:layout_alignBottom="@+id/logo"
+                android:layout_alignEnd="@+id/logo"/>
+        </RelativeLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama toko*"
+            android:textAlignment="textStart"/>
+
+        <EditText
+            android:id="@+id/txt_branchName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Ex: Budi Copy Center"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:singleLine="true"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor telepon*" />
+
+        <EditText
+            android:id="@+id/txt_branchPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Ex: 0812-3456-7890"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat toko*" />
+
+        <EditText
+            android:id="@+id/txt_branchAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Ex: Jl. Raya"
+            android:singleLine="true"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:id="@+id/btn_saveBranch"
+            android:background="#448aff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Register Toko"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

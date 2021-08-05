@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_purchase"
+            android:icon="@drawable/ic_menu_purchase"
+            android:title="@string/menu_purchase" />
+        <item
+            android:id="@+id/nav_transactions"
+            android:icon="@drawable/ic_menu_transactions"
+            android:title="@string/menu_transactions" />
+        <item
+            android:id="@+id/nav_employees"
+            android:icon="@drawable/ic_menu_employee"
+            android:title="@string/menu_employees" />
+        <item
+            android:id="@+id/nav_inventory"
+            android:icon="@drawable/ic_menu_inventory"
+            android:title="@string/menu_inventory" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/ic_menu_service"
+            android:title="@string/menu_services" />
+        <item
+            android:id="@+id/nav_expenses"
+            android:icon="@drawable/ic_menu_expense"
+            android:title="@string/menu_expenses" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_menu_report"
+            android:title="@string/menu_report" />
+        <item
+            android:id="@+id/nav_empty"
+            android:visible="false"/>
+    </group>
+
+</menu>

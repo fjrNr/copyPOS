@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/lblBig_grandTotalType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Total Pembelian" />
+
+            <TextView
+                android:id="@+id/lblBig_grandTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Rp. 2222"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:singleLine="true" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                >
+
+                <TableRow
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Nomor Invoice" />
+
+                    <TextView
+                        android:id="@+id/lbl_invoiceNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="---" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabRow_person"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/lbl_personType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="Nama" />
+
+                    <TextView
+                        android:id="@+id/lbl_personName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="---" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabRow_phone"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="Nomor telepon" />
+
+                    <TextView
+                        android:id="@+id/lbl_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="---" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/lbl_dateType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Tanggal" />
+
+                    <TextView
+                        android:id="@+id/lbl_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="---" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabRow_dueDate"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="Jatuh Tempo" />
+
+                    <TextView
+                        android:id="@+id/lbl_dueDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="---" />
+                </TableRow>
+
+            </TableLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#ddd"
+                android:text="Riwayat Pembayaran"
+                android:textStyle="bold"/>
+
+            <com.example.copypos.NonScrollListView
+                android:id="@+id/lv_ns_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/btn_pay_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Bayar lagi"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ddd"
+                android:text="Daftar Produk"
+                android:textStyle="bold"/>
+
+            <com.example.copypos.NonScrollListView
+                android:id="@+id/lv_ns_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:stretchColumns="*"
+                >
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/lbl_grandTotalType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:text="Total Pembelian" />
+
+                    <TextView
+                        android:id="@+id/lblSmall_grandTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        android:text="Rp ....." />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

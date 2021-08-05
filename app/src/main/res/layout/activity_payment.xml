@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/lbl_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Jumlah belanja"/>
+            <TextView android:textSize="36sp" android:gravity="end" android:id="@+id/lblTotalPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rp. xxx.xxx"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llayoutPaymentMethod" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Metode pembayaran"/>
+            <RadioGroup android:orientation="horizontal" android:id="@+id/rdGroup" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/rdBtnFullCash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Tunai" android:layout_weight="1"/>
+                <RadioButton android:id="@+id/rdBtnPartialCash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Utang" android:layout_weight="1"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical"
+            android:id="@+id/llayoutFullCash"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uang yang diterima*"/>
+            <EditText
+                android:textSize="24sp"
+                android:id="@+id/txt_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textAlignment="textEnd"/>
+            <Button
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:id="@+id/btn_fullCash"
+                android:background="#448aff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Bayar Cash"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llayoutPartialCash" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+            <TextView
+                android:id="@+id/lbl_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama*"/>
+
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"/>
+
+            <TextView android:id="@+id/lbl_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telepon*"/>
+
+            <EditText
+                android:id="@+id/txt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="phone"  />
+
+            <TextView
+                android:id="@+id/lbl_uang_muka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/txt_DPAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal jatuh tempo*"/>
+
+            <Button
+                android:textStyle="bold"
+                android:id="@+id/btn_dueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Tanggal"
+                android:textAlignment="textStart"/>
+
+            <Button android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:id="@+id/btn_partialCash"
+                android:background="#448aff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Bayar"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

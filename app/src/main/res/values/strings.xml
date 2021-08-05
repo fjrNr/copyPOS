@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Copy POS</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Penjualan</string>
+    <string name="menu_purchase">Pembelian</string>
+    <string name="menu_transactions">Riwayat Transaksi</string>
+    <string name="menu_employees">Pegawai</string>
+    <string name="menu_customers">Pelanggan</string>
+    <string name="menu_suppliers">Agen Pemasok</string>
+    <string name="menu_inventory">Barang</string>
+    <string name="menu_services">Layanan</string>
+    <string name="menu_expenses">Biaya Pengeluaran</string>
+    <string name="menu_report">Laporan</string>
+
+    <string name="navigation_drawer_open">OPEN</string>
+    <string name="navigation_drawer_close">CLOSE</string>
+
+    <string name="tab_product">Barang</string>
+    <string name="tab_print">Jasa Print</string>
+    <string name="tab_photocopy">Jasa Fotokopi</string>
+    <string name="tab_service">Jasa Lain</string>
+    <string name="tab_sale">Penjualan</string>
+    <string name="tab_purchase">Pembelian</string>
+
+    <string name="todo">TODO</string>
+</resources>

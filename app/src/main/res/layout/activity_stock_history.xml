@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="24sp" android:textStyle="bold" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Barang yang dibeli"/>
+    <TextView android:textSize="20sp" android:id="@+id/currentStock" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="Stok saat ini: "/>
+    <TextView android:textSize="20sp" android:textStyle="bold" android:background="#ddd" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Riwayat"/>
+    <ListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+</LinearLayout>

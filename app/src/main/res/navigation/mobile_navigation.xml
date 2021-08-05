@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.copypos.navigationDrawer.home.HomeFragment"
+        android:label="Pesanan"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_purchase"
+        android:name="com.example.copypos.navigationDrawer.purchase.PurchaseFragment"
+        android:label="Pembelian"
+        tools:layout="@layout/fragment_purchase" />
+
+    <fragment
+        android:id="@+id/nav_transactions"
+        android:name="com.example.copypos.navigationDrawer.transactions.TransactionsFragment"
+        android:label="Riwayat Transaksi"
+        tools:layout="@layout/fragment_transactions" />
+
+    <fragment
+        android:id="@+id/nav_employees"
+        android:name="com.example.copypos.navigationDrawer.employees.EmployeesFragment"
+        android:label="Pegawai"
+        tools:layout="@layout/fragment_employees" />
+
+    <fragment
+        android:id="@+id/nav_inventory"
+        android:name="com.example.copypos.navigationDrawer.inventory.InventoryFragment"
+        android:label="Barang"
+        tools:layout="@layout/fragment_inventory" />
+
+    <fragment
+        android:id="@+id/nav_services"
+        android:name="com.example.copypos.navigationDrawer.services.ServicesFragment"
+        android:label="Layanan"
+        tools:layout="@layout/fragment_services" />
+
+    <fragment
+        android:id="@+id/nav_expenses"
+        android:name="com.example.copypos.navigationDrawer.expenses.ExpensesFragment"
+        android:label="Biaya Pengeluaran"
+        tools:layout="@layout/fragment_expenses" />
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.example.copypos.navigationDrawer.report.ReportFragment"
+        android:label="Laporan"
+        tools:layout="@layout/fragment_report" />
+
+</navigation>

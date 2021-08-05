@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10sp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tipe Layanan"/>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/rdGroupType" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/rdBtnPrint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Print" android:layout_weight="1"/>
+        <RadioButton android:id="@+id/rdBtnPhotocopy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fotokopi" android:layout_weight="1"/>
+        <RadioButton android:id="@+id/rdBtnOther" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lain-lain" android:layout_weight="1"/>
+    </RadioGroup>
+    <TextView android:id="@+id/lbl_paperType" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Jenis Kertas"/>
+    <Spinner android:id="@+id/spinPaperType" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nama Layanan / Keterangan"/>
+    <EditText android:id="@+id/txtName" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Harga Layanan"/>
+    <EditText android:id="@+id/txtPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+</LinearLayout>
